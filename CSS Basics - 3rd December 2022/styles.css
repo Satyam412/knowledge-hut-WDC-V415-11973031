@@ -1,0 +1,42 @@
+#post img {
+    width: 50px;
+    border-radius: 100px;
+    display: inline;
+    vertical-align: middle;
+}
+
+#post div,
+#post div p {
+    display: inline;
+
+}
+
+#content img {
+    width: 250px;
+}
+
+#content p {
+    max-width: 300px;
+}
+
+#options ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+#options ul li {
+    display: inline;
+    margin-left: 10px;
+}
+
+#options ul li img {
+    width: 30px;
+    vertical-align: middle;
+}
+
+#postContainer {
+    border-radius: 10px;
+    background-color: beige;
+    padding: 20px;
+    max-width: 500px;
+}
