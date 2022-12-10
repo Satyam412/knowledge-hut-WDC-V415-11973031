@@ -1,0 +1,140 @@
+/* Display */
+
+/* h1 { */
+/* display: none; */
+/* visibility: hidden; */
+/* opacity: 0; */
+/* color: #000000FF; */
+/* } */
+
+/* p {
+    display: inline;
+}
+
+button {
+    display: block;
+}
+
+a {
+    display: block;
+} */
+
+/* Position */
+/* static absolute fixed relative sticky */
+/* button {
+    position: static;
+    background-color: greenyellow;
+    position: absolute;
+    position: fixed;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    position: sticky;
+    top: 10px;
+} */
+
+
+/* Image Gallery */
+
+/* img {
+    width: 450px;
+}
+
+#one {
+    position: absolute;
+    top: 50px;
+    left: 125px;
+}
+
+#one_description {
+    position: absolute;
+    top: 250px;
+    left: 270px;
+    color: white;
+    opacity: 0;
+}
+
+#one:hover+#one_description {
+    opacity: 1;
+}
+
+#two {
+    position: absolute;
+    top: 50px;
+    left: 725px;
+}
+
+#three {
+    position: absolute;
+    top: 50px;
+    left: 1325px;
+}
+
+#four {
+    position: absolute;
+    top: 450px;
+    left: 125px;
+}
+
+#five {
+    position: absolute;
+    top: 450px;
+    left: 725px;
+}
+
+#six {
+    position: absolute;
+    top: 450px;
+    left: 1325px;
+} */
+
+/* Combinators */
+/* Descendent selector */
+/* #feedback h1 {
+    background-color: pink;
+} */
+
+/* Immediate Child */
+/* #feedback>h1 {
+    background-color: yellow;
+} */
+
+/* General Sibling */
+/* #quotes~h1 {
+    background-color: cyan;
+} */
+
+/* Adjacent Sibling */
+/* #quotes+h1 {
+    background-color: yellow;
+} */
+
+
+/* Transforms */
+/* button {
+    transform: rotate(90deg);
+    transform: scale(5);
+    transform: translate(100px);
+    transform: matrix(0.5, 0, 0, 1.5, 50, 50) rotate(30deg);
+    transform: skew(30deg, 10deg);
+} */
+
+
+
+/* Transitions */
+div {
+    width: 250px;
+    height: 250px;
+    background-color: yellow;
+    transform: scale(1);
+    transition-property: background-color;
+    transition-delay: 2s;
+    transition-duration: 10s;
+}
+
+div:hover {
+    background-color: red;
+}
+
+
+/* Animations */
