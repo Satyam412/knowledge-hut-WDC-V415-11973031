@@ -1,0 +1,145 @@
+/* Grid */
+
+/* body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    background-color: lightgreen;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+}
+
+#leftmenu,
+#sidebar {
+    background-color: darkslategray;
+}
+
+#leftmenu div,
+#sidebar div {
+    margin: 20px;
+}
+
+#leftmenu a,
+#sidebar a {
+    margin-left: 10px;
+    color: white;
+}
+
+#maincontent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#maincontent div {
+    margin: 20px;
+}
+
+#maincontent img {
+    max-width: 250px;
+} */
+
+
+
+
+/* Flexbox */
+
+/* section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 400px;
+    align-items: center;
+    background-color: pink;
+}
+
+p {
+    max-width: 300px;
+} */
+img {
+    max-width: 150px;
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+}
+
+/* Media Queries */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    p {
+        color: red;
+        font-size: 20px;
+    }
+
+    section {
+        display: block;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    p {
+        color: yellow;
+    }
+
+    section {
+        display: block;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    p {
+        color: green;
+    }
+
+    img {
+        display: none;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    p {
+        color: blue;
+    }
+
+    img {
+        display: none;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    p {
+        color: maroon;
+    }
+
+    img {
+        display: none;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
