@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="newTaskContent" placeholder="Your Task" />
+    <button id="addTask">Add Task</button>
+    <hr>
+    <ul id="taskList"></ul>
+
+    <script>
+        let itemCount = 0;
+        // 1. Attach eventListener to the button
+        let addTaskButton = document.getElementById("addTask");
+        addTaskButton.addEventListener("click", addTask);
+
+        function addTask() {
+            // 2. Read the task input from the user
+            itemCount++;
+            let newTaskContent = document.getElementById("newTaskContent").value;
+            // 3. Create a new li for every input
+            let newListItem = document.createElement("li");
+            let newItemPara = document.createElement("p");
+            let completeButton = document.createElement("button");
+            completeButton.setAttribute("id", "completeButton" + itemCount);
+            completeButton.innerText = "Mark as complete";
+            let removeButton = document.createElement("button");
+            removeButton.setAttribute("id", "removeButton" + itemCount);
+            removeButton.innerText = "Delete";
+            newItemPara.innerHTML = newTaskContent;
+            newListItem.appendChild(newItemPara);
+            newListItem.appendChild(completeButton);
+            newListItem.appendChild(removeButton);
+            // 4. Show the list on the screen
+            document.getElementById("taskList").appendChild(newListItem);
+            document.getElementById("newTaskContent").value = '';
+        }
+    </script>
+</body>
+
+</html>

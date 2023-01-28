@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+</head>
+
+<body>
+    <section>
+        <h1 id="quote">Lorem ipsum dolor sit amet consectetur, adipisicing econsectetur vel cumque dolor
+            tempore.</h1>
+        <h3 id="author">by Author Name</h3>
+        <button id="generate">Generate Quote</button>
+    </section>
+
+    <script>
+        const quotes = [
+            {
+                quote:
+                    "Life is too short and sweet to be spent by cribbing and complaining about things. Here are some random quotes about the most wonderful gift that we've got",
+                author: "Life"
+            },
+            {
+                quote:
+                    "Humor is richly rewarding to the person who employs it. It has some value in gaining and holding attention. But it has no persuasive value at all",
+                author: "John Kenneth Galbraith"
+            },
+            {
+                quote:
+                    "God save me from my friends. I can protect myself from my enemies.",
+                author: "Claude Louis Hector de Villars "
+            },
+            {
+                quote: "The price of anything is the amount of life you exchange for it.",
+                author: "David Thoreau"
+            },
+            {
+                quote:
+                    "Life is like a landscape. You live in the midst of it but can describe it only from the vantage point of distance. ",
+                author: "Charles Lindbergh"
+            },
+            {
+                quote:
+                    "A critic is someone who never actually goes to the battle, yet who afterwards comes out shooting the wounded.",
+                author: "Tyne Daly"
+            }
+        ];
+
+        // 1. Attach eventListener to the button
+        let generate = document.getElementById("generate");
+        generate.addEventListener("click", generateQuote);
+
+        function generateQuote() {
+            // 2. Generate a Random Number
+            let random = Math.floor(Math.random() * quotes.length);
+            // 3. Read the quote and author tags from the document
+            let quote = document.getElementById("quote");
+            let author = document.getElementById("author");
+            // 4. Replace the content with the random quote
+            quote.innerHTML = quotes[random].quote;
+            author.innerHTML = quotes[random].author;
+        }
+
+    </script>
+</body>
+
+</html>
