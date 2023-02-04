@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Book Search</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter book name" id="bookTitle">
+    <button id="searchButton">Search</button>
+    <hr>
+    <div id="bookList"></div>
+
+    <script>
+        // 1. Attach eventListener to the button
+        searchButton = document.getElementById("searchButton").addEventListener("click", searchBooks);
+
+        function searchBooks(){
+            // 2. Read the name of the book from the user
+            let bookTitle = document.getElementById("bookTitle").value;
+            // 3. Connect to the Google Book API
+            let myRequest = new XMLHttpRequest(); //readyState = 0
+            myRequest.open("GET", "https://www.googleapis.com/books/v1/volumes?q="+bookTitle); //readyState = 1
+            myRequest.send(); //readyState = 2
+            //readyState = 3 when the server is processing the request
+            //readyState = 4 when the response is received
+            myRequest.onreadystatechange = ()=>{
+                if(myRequest.readyState===4 && myRequest.status===200){
+                    // 4. Find the relevant data
+                    // console.log(myRequest.responseText);
+                    let convertedData = JSON.parse(myRequest.responseText);
+                    // console.log(convertedData);
+                    // 5. Print the results back on the screen
+                   convertedData.items.forEach(book => {
+                        let newBook = document.createElement("p");
+                        newBook.innerText = book.volumeInfo.title;
+                        document.getElementById("bookList").appendChild(newBook);
+                   });
+                }
+            }
+        }
+    </script>
+</body>
+</html>
