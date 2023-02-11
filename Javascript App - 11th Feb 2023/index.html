@@ -1,0 +1,99 @@
+<!--
+Create an application which shows the following information per user from randomuser.me API :
+1. Image
+2. Full Name
+3. Date of birth
+4. Address  
+
+There should be a "Refresh User" button which fetches new data on every click.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random User Generator</title>
+    <style>
+      img {
+        width: 10%;
+      }
+
+      #wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #inner {
+        margin-left: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="wrapper">
+      <img
+        src="https://th.bing.com/th/id/R.35580302404100d3b89672aadd7aa0d7?rik=btmccSR9ewgAGQ&pid=ImgRaw&r=0"
+        alt=""
+        id="userImage"
+      />
+      <div id="inner">
+        <p id="userName">Full Name</p>
+        <p id="userDOB">Date of Birth</p>
+        <p id="userAddress">Address</p>
+        <button onclick="loadData()">Refresh Now</button>
+      </div>
+    </section>
+
+    <script>
+      //   let person = {
+      //     image:
+      //       "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
+      //     name: "john",
+      //     dob: "17-08-1990",
+      //     address: "45, Avenue 1, Mumbai - 4400001",
+      //   };
+      function loadData() {
+        userImage = document.getElementById("userImage");
+        userName = document.getElementById("userName");
+        userDOB = document.getElementById("userDOB");
+        userAddress = document.getElementById("userAddress");
+        // setData();
+
+        // API Connection
+        // 1. Create the request
+        let myRequest = new XMLHttpRequest();
+        // 2. Open the request
+        myRequest.open("GET", "https://randomuser.me/api");
+        // 3. Send the request
+        myRequest.send();
+        // 4. Receive the response
+        myRequest.onreadystatechange = () => {
+          if (myRequest.readyState === 4 && myRequest.status === 200) {
+            // 5. Process the data
+            let convertedData = JSON.parse(myRequest.responseText);
+            let person = convertedData.results[0];
+
+            setData(
+              person.picture.thumbnail,
+              person.name.title +
+                " " +
+                person.name.first +
+                " " +
+                person.name.last,
+              person.dob.date,
+              person.location.city
+            );
+          }
+        };
+      }
+
+      function setData(imgSrc, personName, personDOB, personAddress) {
+        userImage.setAttribute("src", imgSrc);
+        userName.innerText = personName;
+        userDOB.innerText = personDOB;
+        userAddress.innerText = personAddress;
+      }
+    </script>
+  </body>
+</html>
