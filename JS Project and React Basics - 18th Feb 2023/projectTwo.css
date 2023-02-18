@@ -1,0 +1,10 @@
+#allImages{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    justify-content: space-around;
+}
+
+img{
+    width: 30%;
+}
