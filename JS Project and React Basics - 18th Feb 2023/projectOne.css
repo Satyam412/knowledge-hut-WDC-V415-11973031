@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(224, 217, 217);
+}
+
+#container{
+    background-color: white;
+    width: 500px;
+    margin: 20px auto;
+    padding: 10px 50px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+h1{
+    font-family: 'Poppins';
+    font-size: 26px;
+}
+
+#allTasks{
+    list-style: none;
+    text-align: left;
+}
+
+#allTasks li{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Roboto';
+    font-size: 18px;
+}
+
+.complete p{
+    text-decoration: line-through;
+}
+
+.bi-check-square-fill{
+    color: green;
+}
+
+.bi-trash3-fill{
+    color:red;
+}
+
+button{
+    background-color: royalblue;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+
+button:hover{
+   cursor: pointer;
+}
+
+input{
+    height: 30px;
+    font-size: 18px;
+}
