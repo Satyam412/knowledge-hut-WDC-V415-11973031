@@ -1,0 +1,18 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 150px;
+    align-items: center;
+}
+
+img{
+    width: 25%;
+}
+
+nav a{
+    margin-left: 50px;
+    text-decoration: none;
+    color: rgb(207, 90, 110);
+    font-weight: bold;
+    font-size: 20px;
+}

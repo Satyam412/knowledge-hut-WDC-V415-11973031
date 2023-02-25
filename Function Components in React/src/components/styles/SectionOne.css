@@ -1,0 +1,33 @@
+#sectionOne{
+    background-image: url('https://www.unboxingart.in/wp-content/uploads/2021/03/header_bg_1.png');
+    padding: 200px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sectionOne>h1{
+    color: white;
+    font-size: 36px;
+    font-family: 'Tilt Neon';
+}
+
+#sectionOne>h3{
+    color: white;
+    font-size: 28px;
+    font-family: 'Tilt Neon';
+}
+
+#sectionOne>button{
+    padding: 15px 25px;
+    background-color: rgb(207, 90, 110);
+    border-radius: 20px;
+    color: white;
+    font-size: 18px;
+    border: none;
+}
+
+#sectionOne>button:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 10px black;
+}

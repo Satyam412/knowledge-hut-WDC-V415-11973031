@@ -1,0 +1,25 @@
+#coursesSection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card{
+    width: 22%;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 2px 2px 20px rgba(157, 151, 151, 0.879);
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.card img,p,h2{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
