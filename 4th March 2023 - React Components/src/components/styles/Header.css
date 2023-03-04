@@ -1,0 +1,9 @@
+header{
+    display: flex;
+    justify-content: space-around;
+}
+
+header>img{
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}

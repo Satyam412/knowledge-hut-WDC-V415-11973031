@@ -1,0 +1,17 @@
+#headerContent{
+    padding: 50px;
+    width: 70%;
+}
+
+#headerContent button{
+    background-color: royalblue;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+}
+
+#headerContent button:hover{
+    background-color: rgb(46, 78, 173);
+    cursor: pointer;
+}

@@ -1,0 +1,23 @@
+.individualFeature{
+    width: 35%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.436);
+    margin-bottom: 50px;
+}
+
+.individualFeature>h2{
+    position: relative;
+    left: 180px;
+    bottom: 40px;
+    padding-top: 10px;
+    background-color: beige;
+    border-radius: 100%;
+    text-align: center;
+    width: 60px;
+    height: 50px;
+}
+
+.individualFeature>i{
+    font-size: 32px;
+}

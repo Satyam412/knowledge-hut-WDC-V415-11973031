@@ -1,0 +1,14 @@
+#featureSection{
+    padding: 50px;
+}
+
+#featureWrapper{
+    display: flex;
+   
+}
+
+#featureContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
