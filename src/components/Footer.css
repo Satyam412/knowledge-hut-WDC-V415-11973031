@@ -1,0 +1,14 @@
+footer{
+    text-align: center;
+    background-color: aquamarine;
+    margin: 0;
+}
+
+footer p{
+    margin: 0;
+    padding: 10px;
+}
+
+footer p span{
+    color: red;
+}

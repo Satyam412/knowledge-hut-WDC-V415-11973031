@@ -1,0 +1,20 @@
+header{
+    background-image: url('../assets/retrosupply-jLwVAUtLOAQ-unsplash.jpg');
+    padding: 120px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+header button{
+    background-color: aquamarine;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    border: 1px solid rgb(11, 67, 11);
+    color: rgb(11, 67, 11);
+}
+header button:hover{
+    cursor: pointer;
+    background-color: rgb(33, 108, 83);
+    color: white;
+}

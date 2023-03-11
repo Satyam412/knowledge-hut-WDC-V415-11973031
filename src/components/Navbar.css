@@ -1,0 +1,18 @@
+nav{
+    display: flex;
+    padding: 20px 50px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+.navLink{
+    margin-left: 30px;
+    color: rgb(11, 67, 11);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navLink:hover{
+    text-decoration: underline;
+}
