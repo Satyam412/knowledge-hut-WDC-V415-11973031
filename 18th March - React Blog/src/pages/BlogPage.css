@@ -1,0 +1,9 @@
+.liked{
+    background-color: green;
+    color:white;
+    border-radius: 20px;
+}
+
+.notLiked{
+    background-color: white;
+}
