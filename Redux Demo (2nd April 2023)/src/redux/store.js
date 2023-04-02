@@ -1,8 +1,7 @@
 import { createStore } from "redux";
-// import countReducer from "./reducers/constReducer";
-import cardReducer from "./reducers/cardReducer";
+import rootReducer from "./reducers/rootReducer";
 
-// let store = createStore(countReducer);
-let store = createStore(cardReducer);
+let store = createStore(rootReducer);
+console.log(store.getState());
 
 export default store;

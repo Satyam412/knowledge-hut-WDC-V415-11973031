@@ -2,7 +2,7 @@ import { connect } from "react-redux";
 
 const mapStateToProps = (state) => {
   return {
-    count: state,
+    count: state.count,
   };
 };
 const mapDispatchToProps = (dispatch) => {

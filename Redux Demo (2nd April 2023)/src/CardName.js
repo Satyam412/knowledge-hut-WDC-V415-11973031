@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 function CardName(props) {
   return (
     <section>
-      <h1>{props.state.name}</h1>
+      <h1>{props.state.name.name}</h1>
       <div>
         <input
           type="text"
