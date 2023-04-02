@@ -1,0 +1,15 @@
+div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input{
+    height: 25px;
+}
+
+h1{
+    position: absolute;
+    top:130px;
+    right:500px
+}
