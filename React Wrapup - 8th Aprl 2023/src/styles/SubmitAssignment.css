@@ -1,0 +1,20 @@
+#assignment{
+    text-align: center;
+}
+#assignment div{
+    margin-bottom: 30px;
+}
+
+#submissionList{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.individual-submission{
+    border: 2px solid black;
+    padding: 20px;
+    box-shadow: 2px 2px 5px gray;
+    width: 16%;
+    margin-bottom: 30px;
+}
