@@ -1,0 +1,10 @@
+#allProducts{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#allProducts div{
+    width: 23%;
+    margin: 50px;
+}
