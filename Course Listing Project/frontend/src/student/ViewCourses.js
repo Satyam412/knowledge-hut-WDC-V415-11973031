@@ -25,7 +25,7 @@ const ViewCourses = () => {
       <Row xs={1} md={3} className="g-4">
         {allCoursesRedux.courses &&
           allCoursesRedux.courses.map((course) => (
-            <Col>
+            <Col key={course._id}>
               <CourseCard
                 courseImg={course.courseImg}
                 key={course._id}

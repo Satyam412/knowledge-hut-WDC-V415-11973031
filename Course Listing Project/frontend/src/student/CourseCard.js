@@ -19,6 +19,7 @@ const CourseCard = (props) => {
           borderTopLeftRadius: "10px",
           borderTopRightRadius: "10px",
         }}
+        alt={props.title}
       />
       <h4 style={{ marginTop: "20px" }}>{props.title}</h4>
       <h5>{props.price}</h5>
